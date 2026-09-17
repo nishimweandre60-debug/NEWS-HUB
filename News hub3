@@ -1,0 +1,43 @@
+// MOBILE MENU
+
+function toggleMenu() {
+
+    const menu = document.getElementById("navMenu");
+
+    menu.classList.toggle("show");
+}
+
+
+// READ MORE
+
+function readMore() {
+
+    alert(
+        "Murakoze! Hano ni ho tuzashyira article yuzuye."
+    );
+
+}
+
+
+// NEWSLETTER
+
+function subscribe(event) {
+
+    event.preventDefault();
+
+    const email =
+        document.getElementById("email").value;
+
+    if (email) {
+
+        alert(
+            "Murakoze! " +
+            email +
+            " was subscribed successfully."
+        );
+
+        document.getElementById("email").value = "";
+
+    }
+
+}
