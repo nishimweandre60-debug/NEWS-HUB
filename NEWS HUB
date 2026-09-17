@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEWS HUB</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            <span>NEWS</span> HUB
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#news">Amakuru</a>
+            <a href="#entertainment">Imyidagaduro</a>
+            <a href="#trending">Trending</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- BREAKING NEWS -->
+    <div class="breaking">
+        <strong>BREAKING:</strong>
+
+        <span>
+            Ibi ni ibigezweho uyu munsi muri NEWS HUB
+        </span>
+    </div>
+
+
+    <!-- HERO -->
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="category">
+                    AMAKURU
+                </span>
+
+                <h1>
+                    Amakuru mashya n'ibigezweho uyu munsi
+                </h1>
+
+                <p>
+                    Menya amakuru mashya, imyidagaduro,
+                    siporo n'ibindi bigezweho.
+                </p>
+
+                <button onclick="readMore()">
+                    Soma byinshi →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LATEST NEWS -->
+        <section id="news" class="section">
+
+            <div class="section-title">
+                <h2>Amakuru Mashya</h2>
+                <span></span>
+            </div>
+
+            <div class="news-grid">
+
+                <!-- CARD 1 -->
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80"
+                        alt="News">
+
+                    <div class="card-content">
+
+                        <span class="tag">
+                            AMAKURU
+                        </span>
+
+                        <h3>
+                            Menya ibigezweho uyu munsi
+                        </h3>
+
+                        <p>
+                            Amakuru mashya ari kuvugwa cyane
+                            n'ibintu bishya biri kuba.
+                        </p>
+
+                        <small>
+                            📅 17 September 2026
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+                        alt="Entertainment">
+
+                    <div class="card-content">
+
+                        <span class="tag entertainment">
+                            IMYIDAGADURO
+                        </span>
+
+                        <h3>
+                            Abahanzi n'ibyamamare
+                            bari kuvugwa cyane
+                        </h3>
+
+                        <p>
+                            Menya ibigezweho mu myidagaduro.
+                        </p>
+
+                        <small>
+                            📅 17 September 2026
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80"
+                        alt="Sports">
+
+                    <div class="card-content">
+
+                        <span class="tag sports">
+                            SIPORO
+                        </span>
+
+                        <h3>
+                            Amakuru mashya ya siporo
+                        </h3>
+
+                        <p>
+                            Dore ibigezweho muri siporo
+                            n'imikino itandukanye.
+                        </p>
+
+                        <small>
+                            📅 17 September 2026
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENTERTAINMENT -->
+        <section id="entertainment" class="section dark-section">
+
+            <div class="section-title">
+                <h2>🎬 Imyidagaduro</h2>
+            </div>
+
+            <div class="entertainment-grid">
+
+                <div class="ent-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80"
+                        alt="Music">
+
+                    <div>
+                        <span>MUSIC</span>
+
+                        <h3>
+                            Umuziki n'abahanzi bashya
+                        </h3>
+
+                        <button onclick="readMore()">
+                            Soma →
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="ent-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80"
+                        alt="Movies">
+
+                    <div>
+                        <span>MOVIES</span>
+
+                        <h3>
+                            Filime nshya ziri kuvugwa
+                        </h3>
+
+                        <button onclick="readMore()">
+                            Soma →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRENDING -->
+        <section id="trending" class="section">
+
+            <div class="section-title">
+                <h2>🔥 Trending</h2>
+            </div>
+
+            <div class="trending-list">
+
+                <div class="trend">
+                    <strong>01</strong>
+                    <p>
+                        Ibigezweho muri Afurika
+                    </p>
+                </div>
+
+                <div class="trend">
+                    <strong>02</strong>
+                    <p>
+                        Imyidagaduro iri kuvugwa cyane
+                    </p>
+                </div>
+
+                <div class="trend">
+                    <strong>03</strong>
+                    <p>
+                        Amakuru mashya ya siporo
+                    </p>
+                </div>
+
+                <div class="trend">
+                    <strong>04</strong>
+                    <p>
+                        Abahanzi bashya bari kwigaragaza
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+
+            <h2>
+                Shaka amakuru mashya
+            </h2>
+
+            <p>
+                Injiza email yawe kugira ngo ubone amakuru mashya.
+            </p>
+
+            <form onsubmit="subscribe(event)">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Andika email yawe"
+                    required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-logo">
+            NEWS HUB
+        </div>
+
+        <p>
+            © 2026 NEWS HUB. All Rights Reserved.
+        </p>
+
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+<script>
+// MOBILE MENU
+
+function toggleMenu() {
+
+    const menu = document.getElementById("navMenu");
+
+    menu.classList.toggle("show");
+}
+
+
+// READ MORE
+
+function readMore() {
+
+    alert(
+        "Murakoze! Hano ni ho tuzashyira article yuzuye."
+    );
+
+}
+
+
+// NEWSLETTER
+
+function subscribe(event) {
+
+    event.preventDefault();
+
+    const email =
+        document.getElementById("email").value;
+
+    if (email) {
+
+        alert(
+            "Murakoze! " +
+            email +
+            " was subscribed successfully."
+        );
+
+        document.getElementById("email").value = "";
+
+    }
+
+}
+</script>
